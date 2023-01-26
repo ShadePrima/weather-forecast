@@ -1,0 +1,14 @@
+@import './variables';
+@import './libs/reset';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: $color-light;
+}

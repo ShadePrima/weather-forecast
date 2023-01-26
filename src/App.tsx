@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import CurrentPlace from './components/CurrentPlace/CurrentPlace';
+import Header from './components/Header/Header';
+import Now from './components/NowInfo/NowInfo';
+import WeekInfo from './components/WeekInfo/WeekInfo';
+import './styles/main.scss';
 
 function App() {
+  React.useEffect(() => {
+    const apiKey = '44891c7aa3ff423899f100657232601';
+  }, []);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <CurrentPlace />
+      <Now />
+      <WeekInfo />
     </div>
   );
 }
